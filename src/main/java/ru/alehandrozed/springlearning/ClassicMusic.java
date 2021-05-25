@@ -6,11 +6,5 @@ public class ClassicMusic implements Music {
         return "Rhapsody";
     }
 
-    public  void initMethod(){
-        System.out.println("do my initialisation");
-    }
 
-    public void destroyMethod(){
-        System.out.println("do my destroy");
-    }
 }

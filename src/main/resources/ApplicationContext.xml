@@ -10,9 +10,9 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="musicBean1"
-          class="ru.alehandrozed.springlearning.RapMusic">
-        <!--          init-method="initMethod"-->
-        <!--          destroy-method="destroyMethod">-->
+          class="ru.alehandrozed.springlearning.RapMusic"
+                  init-method="initMethod"
+                  destroy-method="destroyMethod">
     </bean>
 
     <bean id="musicBean2"
@@ -25,19 +25,16 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ru.alehandrozed.springlearning.MusicPlayer"
-          scope="prototype">
-<!--          init-method="initMethod"-->
-<!--          destroy-method="destroyMethod"-->
-        <property name="musicList">
-            <list>
-                <ref bean="musicBean1"/>
-                <ref bean="musicBean2"/>
-                <ref bean="musicBean3"/>
-            </list>
-        </property>
-        <property name="volume" value="44"/>
+          class="ru.alehandrozed.springlearning.MusicPlayer">
+    <property name="musicList">
+        <list>
+            <ref bean="musicBean1"/>
+            <ref bean="musicBean2"/>
+            <ref bean="musicBean3"/>
+        </list>
+    </property>
+    <property name="volume" value="44"/>
 
-    </bean>
+</bean>
 
-</beans>
+        </beans>
