@@ -1,6 +1,13 @@
 package ru.alehandrozed.springlearning;
 
 public class RapMusic implements Music {
+    private RapMusic() {
+    }
+
+    public static RapMusic getRapMusic(){
+        return new RapMusic();
+    }
+
     @Override
     public String getSong() {
         return "Ice,Ice, Baby";

@@ -13,7 +13,8 @@
           class="ru.alehandrozed.springlearning.RapMusic"
           init-method="initMethod"
           destroy-method="destroyMethod"
-          scope="prototype">
+          factory-method="getRapMusic"
+    >
     </bean>
 
     <bean id="musicBean2"
