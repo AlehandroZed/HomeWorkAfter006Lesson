@@ -1,5 +1,8 @@
 package ru.alehandrozed.springlearning;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RapMusic implements Music {
     private RapMusic() {
     }
